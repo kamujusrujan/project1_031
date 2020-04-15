@@ -1,0 +1,35 @@
+
+
+
+
+{% extends "layout.html" %}
+
+{% block banner %}
+	Admin page
+{%endblock%}
+
+
+{% block body %}
+	<table class = 'table'>
+		 <center>User details</center>
+  			<br>
+		<thead>
+		    <tr>
+		      <th scope="col">Username</th>
+		      <th scope="col">Password</th>
+		      <th scope="col">Created On</th>
+		    </tr>
+	  	</thead>
+	  	<tbody>
+			{% for u in list %}
+				<tr>
+			      <th scope="row">{{u.name}}</th>
+			      <td>{{u.password}}</td>
+			      <td>{{u.created_data}}</td>
+			    </tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}
+
+
