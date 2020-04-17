@@ -9,6 +9,9 @@ from database import *
 
 
 
+# smaple
+
+
 app = Flask(__name__)
 app.secret_key = 'srujan_123'
 
